@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8513037de10dbd7af0e0c51f13ddddc9 {
+                    position: relative;
+                    width: 900.0px;
+                    height: 850.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8513037de10dbd7af0e0c51f13ddddc9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8513037de10dbd7af0e0c51f13ddddc9 = L.map(
+                "map_8513037de10dbd7af0e0c51f13ddddc9",
+                {
+                    center: [40.485865, -74.450526],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_505332768328bfcc115026f74bdedc9b = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_505332768328bfcc115026f74bdedc9b.addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var marker_e87ec7bad944fdc20443e8941296b28f = L.marker(
+                [40.485865003656, -74.450526020699],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_0abc8ff520329aa6146b9b89ca049c56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e87ec7bad944fdc20443e8941296b28f.setIcon(icon_0abc8ff520329aa6146b9b89ca049c56);
+        
+    
+        var popup_d688219870970a80dbc78a145bb9adea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bc1e5a61a3a370eaa64271ca15ae6f41 = $(`<div id="html_bc1e5a61a3a370eaa64271ca15ae6f41" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> A Chester Redshaw School<br><b>Address:</b> 216 Livingston Avenue, New Brunswick, NJ 8901<br><b>Match Type:</b> PointAddress<br><b>Match Score:</b> 100.0</div>`)[0];
+                popup_d688219870970a80dbc78a145bb9adea.setContent(html_bc1e5a61a3a370eaa64271ca15ae6f41);
+            
+        
+
+        marker_e87ec7bad944fdc20443e8941296b28f.bindPopup(popup_d688219870970a80dbc78a145bb9adea)
+        ;
+
+        
+    
+    
+            marker_e87ec7bad944fdc20443e8941296b28f.bindTooltip(
+                `<div>
+                     A Chester Redshaw School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4475ecaefe6432e81dfdc3c2fefa3ce3 = L.marker(
+                [40.490120406801, -74.455928980701],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_8845249109634005c980508c7c8dbdbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4475ecaefe6432e81dfdc3c2fefa3ce3.setIcon(icon_8845249109634005c980508c7c8dbdbb);
+        
+    
+        var popup_4d5bc0d1b28730027bf6b443f20c4789 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_08acfc9738767dfb60301cac204a4a59 = $(`<div id="html_08acfc9738767dfb60301cac204a4a59" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> Blanquita B. Valenti Community School<br><b>Address:</b> 50 Jersey Avenue, New Brunswick, NJ 8901<br><b>Match Type:</b> StreetAddress<br><b>Match Score:</b> 100.0</div>`)[0];
+                popup_4d5bc0d1b28730027bf6b443f20c4789.setContent(html_08acfc9738767dfb60301cac204a4a59);
+            
+        
+
+        marker_4475ecaefe6432e81dfdc3c2fefa3ce3.bindPopup(popup_4d5bc0d1b28730027bf6b443f20c4789)
+        ;
+
+        
+    
+    
+            marker_4475ecaefe6432e81dfdc3c2fefa3ce3.bindTooltip(
+                `<div>
+                     Blanquita B. Valenti Community School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecb21892f3ba5decb3a4b938b374c4be = L.marker(
+                [40.50044700061, -74.453648028175],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_98ae014c1e65cee3456d896e28740f77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ecb21892f3ba5decb3a4b938b374c4be.setIcon(icon_98ae014c1e65cee3456d896e28740f77);
+        
+    
+        var popup_268a5daa93b70fb96a7b0cdbab7d57f1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cdaea54dbcc56792bd6b60977c96e639 = $(`<div id="html_cdaea54dbcc56792bd6b60977c96e639" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> Lincoln Elementary School<br><b>Address:</b> 66 Bartlett Street, New Brunswick, NJ 8901<br><b>Match Type:</b> PointAddress<br><b>Match Score:</b> 100.0</div>`)[0];
+                popup_268a5daa93b70fb96a7b0cdbab7d57f1.setContent(html_cdaea54dbcc56792bd6b60977c96e639);
+            
+        
+
+        marker_ecb21892f3ba5decb3a4b938b374c4be.bindPopup(popup_268a5daa93b70fb96a7b0cdbab7d57f1)
+        ;
+
+        
+    
+    
+            marker_ecb21892f3ba5decb3a4b938b374c4be.bindTooltip(
+                `<div>
+                     Lincoln Elementary School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6abe31599774d788fa59d9ba986f97d = L.marker(
+                [40.485213981236, -74.451061037579],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_31cb0c57118219739c315ed25c3f351d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e6abe31599774d788fa59d9ba986f97d.setIcon(icon_31cb0c57118219739c315ed25c3f351d);
+        
+    
+        var popup_3d22f1fcad0f11fa17cddf25988ece4f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fdc9ca2e80ce08a770fea5ffac3c0a42 = $(`<div id="html_fdc9ca2e80ce08a770fea5ffac3c0a42" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> Livingston Elementary School<br><b>Address:</b> 206 Delavan Street, New Brunswick, NJ 8901<br><b>Match Type:</b> PointAddress<br><b>Match Score:</b> 100.0</div>`)[0];
+                popup_3d22f1fcad0f11fa17cddf25988ece4f.setContent(html_fdc9ca2e80ce08a770fea5ffac3c0a42);
+            
+        
+
+        marker_e6abe31599774d788fa59d9ba986f97d.bindPopup(popup_3d22f1fcad0f11fa17cddf25988ece4f)
+        ;
+
+        
+    
+    
+            marker_e6abe31599774d788fa59d9ba986f97d.bindTooltip(
+                `<div>
+                     Livingston Elementary School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1391dc23be8e657ba0bddc25581b0eb5 = L.marker(
+                [40.487825991813, -74.441037035753],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_9f1583285ae82485763587d99d315661 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1391dc23be8e657ba0bddc25581b0eb5.setIcon(icon_9f1583285ae82485763587d99d315661);
+        
+    
+        var popup_8c845a7265555cd9930b69296cd13d3d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a56e62dc8beae182e1931cc374387071 = $(`<div id="html_a56e62dc8beae182e1931cc374387071" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> Lord Stirling Community School<br><b>Address:</b> 101 Redmonf Street, New Brunswick, NJ 8901<br><b>Match Type:</b> PointAddress<br><b>Match Score:</b> 96.97</div>`)[0];
+                popup_8c845a7265555cd9930b69296cd13d3d.setContent(html_a56e62dc8beae182e1931cc374387071);
+            
+        
+
+        marker_1391dc23be8e657ba0bddc25581b0eb5.bindPopup(popup_8c845a7265555cd9930b69296cd13d3d)
+        ;
+
+        
+    
+    
+            marker_1391dc23be8e657ba0bddc25581b0eb5.bindTooltip(
+                `<div>
+                     Lord Stirling Community School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fcec2aafa8b490a6772e0c36f436fb13 = L.marker(
+                [40.482892990337, -74.471353960443],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_a512bf4ebe18f815062b75b9ff40253f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fcec2aafa8b490a6772e0c36f436fb13.setIcon(icon_a512bf4ebe18f815062b75b9ff40253f);
+        
+    
+        var popup_d32ca7e4340f92e31469f69768c4892b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f10b65182e8e1c0886dfe9d58f98d0a7 = $(`<div id="html_f10b65182e8e1c0886dfe9d58f98d0a7" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> Mckinley Community School<br><b>Address:</b> 15 Van Dyke Avenue, New Brunswick, NJ 8901<br><b>Match Type:</b> PointAddress<br><b>Match Score:</b> 100.0</div>`)[0];
+                popup_d32ca7e4340f92e31469f69768c4892b.setContent(html_f10b65182e8e1c0886dfe9d58f98d0a7);
+            
+        
+
+        marker_fcec2aafa8b490a6772e0c36f436fb13.bindPopup(popup_d32ca7e4340f92e31469f69768c4892b)
+        ;
+
+        
+    
+    
+            marker_fcec2aafa8b490a6772e0c36f436fb13.bindTooltip(
+                `<div>
+                     Mckinley Community School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d002496ff010c1cff50a551e0ef5ce5b = L.marker(
+                [40.489312019427, -74.453141006852],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_4fdcd074904ae3a3ea1cd18609e876a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d002496ff010c1cff50a551e0ef5ce5b.setIcon(icon_4fdcd074904ae3a3ea1cd18609e876a3);
+        
+    
+        var popup_df3a39ef7276b46506b7d9384094897c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_939fcf90ad7a45fb07a0d46e0ed89370 = $(`<div id="html_939fcf90ad7a45fb07a0d46e0ed89370" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> New Brunswick Adult High School<br><b>Address:</b> 268 Baldwin Street, New Brunswick, NJ 8901<br><b>Match Type:</b> PointAddress<br><b>Match Score:</b> 100.0</div>`)[0];
+                popup_df3a39ef7276b46506b7d9384094897c.setContent(html_939fcf90ad7a45fb07a0d46e0ed89370);
+            
+        
+
+        marker_d002496ff010c1cff50a551e0ef5ce5b.bindPopup(popup_df3a39ef7276b46506b7d9384094897c)
+        ;
+
+        
+    
+    
+            marker_d002496ff010c1cff50a551e0ef5ce5b.bindTooltip(
+                `<div>
+                     New Brunswick Adult High School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f02a20cb3eda8c14a00ee2be4d9b2823 = L.marker(
+                [40.480618980006, -74.481598993056],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_f89e1623ef8b84338cd1fdb957fa1dde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f02a20cb3eda8c14a00ee2be4d9b2823.setIcon(icon_f89e1623ef8b84338cd1fdb957fa1dde);
+        
+    
+        var popup_1bbfa4df9f01fe23bee518ee62847849 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fb6591a4b21c8058f2f021e507d5d8a4 = $(`<div id="html_fb6591a4b21c8058f2f021e507d5d8a4" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> New Brunswick High School<br><b>Address:</b> 1000 Somerset Street, New Brunswick, NJ 8901<br><b>Match Type:</b> PointAddress<br><b>Match Score:</b> 100.0</div>`)[0];
+                popup_1bbfa4df9f01fe23bee518ee62847849.setContent(html_fb6591a4b21c8058f2f021e507d5d8a4);
+            
+        
+
+        marker_f02a20cb3eda8c14a00ee2be4d9b2823.bindPopup(popup_1bbfa4df9f01fe23bee518ee62847849)
+        ;
+
+        
+    
+    
+            marker_f02a20cb3eda8c14a00ee2be4d9b2823.bindTooltip(
+                `<div>
+                     New Brunswick High School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6cbcdadaef112cdd0118b02e3781c4a = L.marker(
+                [40.472326008823, -74.467858036267],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_10a58d998a3d1539f2e7e292d74ec6f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f6cbcdadaef112cdd0118b02e3781c4a.setIcon(icon_10a58d998a3d1539f2e7e292d74ec6f1);
+        
+    
+        var popup_df8a650a881d86e7963041b1fc81fba9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a789a6f998f5373098fc0dc2253fc608 = $(`<div id="html_a789a6f998f5373098fc0dc2253fc608" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> New Brunswick Middle School<br><b>Address:</b> 1125 Livingston Avenue, New Brunswick, NJ 8901<br><b>Match Type:</b> PointAddress<br><b>Match Score:</b> 100.0</div>`)[0];
+                popup_df8a650a881d86e7963041b1fc81fba9.setContent(html_a789a6f998f5373098fc0dc2253fc608);
+            
+        
+
+        marker_f6cbcdadaef112cdd0118b02e3781c4a.bindPopup(popup_df8a650a881d86e7963041b1fc81fba9)
+        ;
+
+        
+    
+    
+            marker_f6cbcdadaef112cdd0118b02e3781c4a.bindTooltip(
+                `<div>
+                     New Brunswick Middle School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_758143c4c92e0c252be55e37328da400 = L.marker(
+                [40.480473932733, -74.469118917684],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_1eafd84326837a42c07ccce34ec30cea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_758143c4c92e0c252be55e37328da400.setIcon(icon_1eafd84326837a42c07ccce34ec30cea);
+        
+    
+        var popup_a0141958041032afd5d4bc98e674c31f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_43a9e68d08b0ff353f41562159595ddb = $(`<div id="html_43a9e68d08b0ff353f41562159595ddb" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> Pathways Middle School<br><b>Address:</b> 40 Van Dyke Avenue, New Brunswick, NJ 8901<br><b>Match Type:</b> StreetAddress<br><b>Match Score:</b> 100.0</div>`)[0];
+                popup_a0141958041032afd5d4bc98e674c31f.setContent(html_43a9e68d08b0ff353f41562159595ddb);
+            
+        
+
+        marker_758143c4c92e0c252be55e37328da400.bindPopup(popup_a0141958041032afd5d4bc98e674c31f)
+        ;
+
+        
+    
+    
+            marker_758143c4c92e0c252be55e37328da400.bindTooltip(
+                `<div>
+                     Pathways Middle School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16e1993c245bca35f2c445b92d758812 = L.marker(
+                [40.483258986139, -74.444753990716],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_323b34dd143a1ae772691905aa285ef0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_16e1993c245bca35f2c445b92d758812.setIcon(icon_323b34dd143a1ae772691905aa285ef0);
+        
+    
+        var popup_8684ead3c4aca0b14a2c80b856048fe8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d00323203de6422a98029142f89776dc = $(`<div id="html_d00323203de6422a98029142f89776dc" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> Paul Robeson Community School for the Arts<br><b>Address:</b> 199 Paul Robeson Blvd, New Brunswick, NJ 8901<br><b>Match Type:</b> PointAddress<br><b>Match Score:</b> 100.0</div>`)[0];
+                popup_8684ead3c4aca0b14a2c80b856048fe8.setContent(html_d00323203de6422a98029142f89776dc);
+            
+        
+
+        marker_16e1993c245bca35f2c445b92d758812.bindPopup(popup_8684ead3c4aca0b14a2c80b856048fe8)
+        ;
+
+        
+    
+    
+            marker_16e1993c245bca35f2c445b92d758812.bindTooltip(
+                `<div>
+                     Paul Robeson Community School for the Arts
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57817b6c3a331187e4cda805cce13fec = L.marker(
+                [40.491138980953, -74.447121962182],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_27c1c25885e9585bdd2c55287327c841 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_57817b6c3a331187e4cda805cce13fec.setIcon(icon_27c1c25885e9585bdd2c55287327c841);
+        
+    
+        var popup_1a12f0a1fc6be5d46978dd66722fc3f3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b532727912a45f7637f04c3dd6995343 = $(`<div id="html_b532727912a45f7637f04c3dd6995343" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> Roosevelt Elementary School<br><b>Address:</b> 83 Livingston Avenue, New Brunswick, NJ 8901<br><b>Match Type:</b> PointAddress<br><b>Match Score:</b> 100.0</div>`)[0];
+                popup_1a12f0a1fc6be5d46978dd66722fc3f3.setContent(html_b532727912a45f7637f04c3dd6995343);
+            
+        
+
+        marker_57817b6c3a331187e4cda805cce13fec.bindPopup(popup_1a12f0a1fc6be5d46978dd66722fc3f3)
+        ;
+
+        
+    
+    
+            marker_57817b6c3a331187e4cda805cce13fec.bindTooltip(
+                `<div>
+                     Roosevelt Elementary School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e16c00e1aa229b1ae25136686b9c40e7 = L.marker(
+                [40.485406010638, -74.406022976342],
+                {}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var icon_7a0e435ad1e64c46d2ac8cd9e1b74f1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e16c00e1aa229b1ae25136686b9c40e7.setIcon(icon_7a0e435ad1e64c46d2ac8cd9e1b74f1f);
+        
+    
+        var popup_a9cd718d29206120bfa73eac53c0aace = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1af8bbc4d73ab66ce3ec44413709bb9f = $(`<div id="html_1af8bbc4d73ab66ce3ec44413709bb9f" style="width: 100.0%; height: 100.0%;"><b>School Name:</b> Woodrow Wilson Elementary School<br><b>Address:</b> 133 Tunison Road, New Brunswick, NJ 8901<br><b>Match Type:</b> PointAddress<br><b>Match Score:</b> 100.0</div>`)[0];
+                popup_a9cd718d29206120bfa73eac53c0aace.setContent(html_1af8bbc4d73ab66ce3ec44413709bb9f);
+            
+        
+
+        marker_e16c00e1aa229b1ae25136686b9c40e7.bindPopup(popup_a9cd718d29206120bfa73eac53c0aace)
+        ;
+
+        
+    
+    
+            marker_e16c00e1aa229b1ae25136686b9c40e7.bindTooltip(
+                `<div>
+                     Woodrow Wilson Elementary School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_dc1f31f5eec835d322e6511db164bf64 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_dc1f31f5eec835d322e6511db164bf64.addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            var layer_control_93f4867e353f19c9b6d3f478808d46ef_layers = {
+                base_layers : {
+                    "Carto Positron" : tile_layer_505332768328bfcc115026f74bdedc9b,
+                    "OpenStreetMap" : tile_layer_dc1f31f5eec835d322e6511db164bf64,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_93f4867e353f19c9b6d3f478808d46ef = L.control.layers(
+                layer_control_93f4867e353f19c9b6d3f478808d46ef_layers.base_layers,
+                layer_control_93f4867e353f19c9b6d3f478808d46ef_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+
+        
+    
+            tile_layer_505332768328bfcc115026f74bdedc9b.addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+    
+            tile_layer_dc1f31f5eec835d322e6511db164bf64.addTo(map_8513037de10dbd7af0e0c51f13ddddc9);
+        
+</script>
+</html>
